@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>C# шпоргалка</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4
+            border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto
+                text-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use
+                        xlink:href="#bootstrap"></use></svg>
+                <span class="fs-4">C# шпоргалка</span>
+            </a>
+
+            <ul class="nav nav-pills">
+
+                <li class="nav-item"><a href="/index.html" class="btn
+                        btn-outline-primary me-2">Задания и тесты</a></li>
+
+                <li class="nav-item"><a href="/csharp.html" class="btn
+                        btn-outline-primary me-2">C# шпоргалка</a></li>
+                <li class="nav-item"><a href="#" class="btn
+                        btn-outline-primary me-2">Тест №3</a></li>
+            </ul>
+        </header>
+        <div class="px-4 py-5 my-5 text-center">
+            <img class="d-block mx-auto mb-4"
+                src="./ny5xkUPjWXU.jpg" alt=""
+                width="160" height="160">
+            <h1 class="display-5 fw-bold">Экзамен МДК 11.01</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">Данный сайт создан в целях успешной сдачи
+                    экзамена по дисцпилине МДК 11.01</p>
+
+            </div>
+        </div>
+
+
+        <main>
+            <img src="./1.png" alt="">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Пример добавления</h1>
+                <p class="col-md-8 fs-4">MySqlDataReader itemsQuery =
+                    mainWindow.Connection($"INSERT INTO
+                    `Electroshop` (`id`, `name`, `color`, `max_memory`,
+                    `diagonal`,
+                    `resolution`) VALUES (NULL, '{name.Text}', '{colorcb.Text}',
+                    '{mem.Text}', '{dia.Text}', '{rez.Text}');");</p>
+            </div>
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Пример изменения</h1>
+                <p class="col-md-8 fs-4">
+                    MySqlDataReader itemsQuery = mainWindow.Connection($"UPDATE
+                    `Electroshop` SET `name` = '{name.Text}', `color` =
+                    '{colorcb.Text}', `max_memory` = '{mem.Text}', `diagonal` =
+                    '{dia.Text}', `resolution` = '{rez.Text}' WHERE
+                    `Electroshop`.`id` = {mainWindow.items[id].id};");</p>
+            </div>
+        </main>
+
+        <footer class="d-flex flex-wrap justify-content-between
+            align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-muted">© 2022 Company, Inc</p>
+
+            <a href="/" class="col-md-4 d-flex align-items-center
+                justify-content-center mb-3 mb-md-0 me-md-auto link-dark
+                text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use
+                        xlink:href="#bootstrap"></use></svg>
+            </a>
+
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="#" class="nav-link px-2
+                        text-muted">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2
+                        text-muted">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2
+                        text-muted">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2
+                        text-muted">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2
+                        text-muted">About</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
